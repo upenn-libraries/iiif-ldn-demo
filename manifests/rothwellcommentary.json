@@ -1,0 +1,2098 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "http://scta.info/iiif/rothwellcommentary/penn/manifest",
+  "@type": "sc:Manifest",
+  "label": "rothwellcommentary/penn",
+  "description": "Manifest Description",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "service": {
+    "@context": "http://iiif.io/api/search/1/context.json",
+    "@id": "http://exist.scta.info/exist/apps/scta-app/iiif/rothwellcommentary/penn/search",
+    "profile": "http://iiif.io/api/search/1/search",
+    "label": "Search within this manifest"
+  },
+  "sequences": [
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/sequence/normal",
+      "@type": "sc:Sequence",
+      "label": "Current page order",
+      "viewingDirection": "left-to-right",
+      "viewingHint": "paged",
+      "canvases": [
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P24r",
+          "@type": "sc:Canvas",
+          "label": "24r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P24r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P24r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P24r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0050_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/24r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P24v",
+          "@type": "sc:Canvas",
+          "label": "24v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P24v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P24v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P24v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0051_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/24v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P25r",
+          "@type": "sc:Canvas",
+          "label": "25r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P25r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P25r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P25r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0052_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/25r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P25v",
+          "@type": "sc:Canvas",
+          "label": "25v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P25v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P25v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P25v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0053_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/25v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P26r",
+          "@type": "sc:Canvas",
+          "label": "26r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P26r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P26r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P26r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0054_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/26r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P26v",
+          "@type": "sc:Canvas",
+          "label": "26v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P26v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P26v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P26v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0055_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/26v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P27r",
+          "@type": "sc:Canvas",
+          "label": "27r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P27r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P27r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P27r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0056_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/27r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P27v",
+          "@type": "sc:Canvas",
+          "label": "27v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P27v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P27v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P27v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0057_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/27v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P28r",
+          "@type": "sc:Canvas",
+          "label": "28r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P28r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P28r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P28r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0058_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/28r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P28v",
+          "@type": "sc:Canvas",
+          "label": "28v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P28v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P28v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P28v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0059_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/28v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P29r",
+          "@type": "sc:Canvas",
+          "label": "29r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P29r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P29r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P29r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0060_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/29r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P29v",
+          "@type": "sc:Canvas",
+          "label": "29v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P29v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P29v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P29v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0061_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/29v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P30r",
+          "@type": "sc:Canvas",
+          "label": "30r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P30r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P30r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P30r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0062_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/30r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P30v",
+          "@type": "sc:Canvas",
+          "label": "30v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P30v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P30v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P30v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0063_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/30v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P31r",
+          "@type": "sc:Canvas",
+          "label": "31r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P31r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P31r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P31r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0064_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/31r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P31v",
+          "@type": "sc:Canvas",
+          "label": "31v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P31v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P31v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P31v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0065_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/31v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P32r",
+          "@type": "sc:Canvas",
+          "label": "32r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P32r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P32r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P32r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0066_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/32r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P32v",
+          "@type": "sc:Canvas",
+          "label": "32v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P32v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P32v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P32v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0067_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/32v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P33r",
+          "@type": "sc:Canvas",
+          "label": "33r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P33r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P33r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P33r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0068_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/33r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P33v",
+          "@type": "sc:Canvas",
+          "label": "33v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P33v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P33v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P33v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0069_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/33v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P34r",
+          "@type": "sc:Canvas",
+          "label": "34r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P34r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P34r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P34r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0070_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/34r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P34v",
+          "@type": "sc:Canvas",
+          "label": "34v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P34v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P34v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P34v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0071_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/34v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P35r",
+          "@type": "sc:Canvas",
+          "label": "35r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P35r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P35r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P35r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0072_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/35r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P35v",
+          "@type": "sc:Canvas",
+          "label": "35v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P35v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P35v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P35v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0073_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/35v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P36r",
+          "@type": "sc:Canvas",
+          "label": "36r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P36r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P36r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P36r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0074_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/36r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P36v",
+          "@type": "sc:Canvas",
+          "label": "36v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P36v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P36v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P36v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0075_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/36v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P37r",
+          "@type": "sc:Canvas",
+          "label": "37r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P37r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P37r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P37r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0076_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/37r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P37v",
+          "@type": "sc:Canvas",
+          "label": "37v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P37v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P37v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P37v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0077_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/37v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P38r",
+          "@type": "sc:Canvas",
+          "label": "38r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P38r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P38r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P38r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0078_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/38r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P38v",
+          "@type": "sc:Canvas",
+          "label": "38v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P38v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P38v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P38v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0079_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/38v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P39r",
+          "@type": "sc:Canvas",
+          "label": "39r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P39r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P39r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P39r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0080_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/39r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P39v",
+          "@type": "sc:Canvas",
+          "label": "39v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P39v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P39v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P39v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0081_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/39v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P40r",
+          "@type": "sc:Canvas",
+          "label": "40r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P40r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P40r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P40r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0082_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/40r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P40v",
+          "@type": "sc:Canvas",
+          "label": "40v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P40v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P40v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P40v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0083_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/40v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P41r",
+          "@type": "sc:Canvas",
+          "label": "41r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P41r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P41r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P41r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0084_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/41r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P41v",
+          "@type": "sc:Canvas",
+          "label": "41v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P41v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P41v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P41v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0085_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/41v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P42r",
+          "@type": "sc:Canvas",
+          "label": "42r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P42r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P42r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P42r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0086_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/42r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P42v",
+          "@type": "sc:Canvas",
+          "label": "42v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P42v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P42v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P42v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0087_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/42v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P43r",
+          "@type": "sc:Canvas",
+          "label": "43r",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P43r-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P43r",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P43r.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0088_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/43r",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        },
+        {
+          "@id": "http://scta.info/iiif/penn/canvas/P43v",
+          "@type": "sc:Canvas",
+          "label": "43v",
+          "height": "1800",
+          "width": "1430",
+          "images": [
+            {
+              "@id": "http://scta.info/iiif/penn/annotation/P43v-image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://scta.info/iiif/penn/canvas/P43v",
+              "resource": {
+                "@id": "http://scta.info/iiif/penn/res/P43v.jpg",
+                "@type": "http://purl.org/dc/dcmitype/Image",
+                "format": "image/jpeg",
+                "height": "1800",
+                "width": "1430",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://loris2.scta.info/penn/0444_0089_web.jpg",
+                  "profile": "http://iiif.io/api/image/1/level2.json"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://scta.info/iiif/rothwellcommentary/penn/list/transcription/43v",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1",
+      "@type": "sc:Range",
+      "label": "William de Rothwell Commentary",
+      "viewingHint": "top",
+      "ranges": [
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary rothwellcommentary/penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1",
+      "@type": "sc:Range",
+      "label": "Liber I",
+      "ranges": [
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-1",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-2",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-3",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-4",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-5",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-6",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-7",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-8",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-9",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-10",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-11",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-12",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-13",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-14",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-15",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-16",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-17",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-18",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-19",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-20",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-21",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-22",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-23",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-24",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-25",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-26",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-27",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-28",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-29",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-30",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-31",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-32",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-33",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-34",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-35",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-36",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-37",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-38",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-39",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-40",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-41",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-42",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-43",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-44",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-45",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-46",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-47",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-48",
+        "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-49"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary rothwellcommentary/penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-1",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Prologus",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P24r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-2",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 1",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P24r",
+        "http://scta.info/iiif/penn/canvas/P24v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-3",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 2",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P24v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-4",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 3",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P24v",
+        "http://scta.info/iiif/penn/canvas/P25r",
+        "http://scta.info/iiif/penn/canvas/P25v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-5",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 4",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P25v",
+        "http://scta.info/iiif/penn/canvas/P26r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-6",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 5",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P26r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-7",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 6",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P26r",
+        "http://scta.info/iiif/penn/canvas/P26v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-8",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 7",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P26v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-9",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 8",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P26v",
+        "http://scta.info/iiif/penn/canvas/P27r",
+        "http://scta.info/iiif/penn/canvas/P27v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-10",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 9",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P27v",
+        "http://scta.info/iiif/penn/canvas/P28r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-11",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 11",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P28r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-12",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 11",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P28r",
+        "http://scta.info/iiif/penn/canvas/P28v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-13",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 12",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P28v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-14",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 13",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P28v",
+        "http://scta.info/iiif/penn/canvas/P29r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-15",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 14",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P29r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-16",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 15",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P29r",
+        "http://scta.info/iiif/penn/canvas/P29v",
+        "http://scta.info/iiif/penn/canvas/P30r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-17",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 16",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P30r",
+        "http://scta.info/iiif/penn/canvas/P30v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-18",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 17",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P30v",
+        "http://scta.info/iiif/penn/canvas/P31r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-19",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 18",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P31r",
+        "http://scta.info/iiif/penn/canvas/P31v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-20",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 19",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P31v",
+        "http://scta.info/iiif/penn/canvas/P32r",
+        "http://scta.info/iiif/penn/canvas/P32v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-21",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 20",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P32v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-22",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 21",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P32v",
+        "http://scta.info/iiif/penn/canvas/P33r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-23",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 22",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P33r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-24",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 23",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P33r",
+        "http://scta.info/iiif/penn/canvas/P33v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-25",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 24",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P33v",
+        "http://scta.info/iiif/penn/canvas/P34r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-26",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 25",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P34r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-27",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 26",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P34r",
+        "http://scta.info/iiif/penn/canvas/P34v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-28",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 27",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P34v",
+        "http://scta.info/iiif/penn/canvas/P35r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-29",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 28",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P35r",
+        "http://scta.info/iiif/penn/canvas/P35v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-30",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 29",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P35v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-31",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 30",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P35v",
+        "http://scta.info/iiif/penn/canvas/P36r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-32",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 31",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P36r",
+        "http://scta.info/iiif/penn/canvas/P36v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-33",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 32",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P36v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-34",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 33",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P36v",
+        "http://scta.info/iiif/penn/canvas/P37r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-35",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 34",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P37r",
+        "http://scta.info/iiif/penn/canvas/P37v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-36",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 35",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P37v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-37",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 36",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P37v",
+        "http://scta.info/iiif/penn/canvas/P38r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-38",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 37",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P38r",
+        "http://scta.info/iiif/penn/canvas/P38v",
+        "http://scta.info/iiif/penn/canvas/P39r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-39",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 38",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P39r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-40",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 39",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P39r",
+        "http://scta.info/iiif/penn/canvas/P39v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-41",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 40",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P39v",
+        "http://scta.info/iiif/penn/canvas/P40r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-42",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 41",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P40r",
+        "http://scta.info/iiif/penn/canvas/P40v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-43",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 42",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P40v",
+        "http://scta.info/iiif/penn/canvas/P41r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-44",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 43",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P41r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-45",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 44",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P41r",
+        "http://scta.info/iiif/penn/canvas/P41v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-46",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 45",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P41v",
+        "http://scta.info/iiif/penn/canvas/P42r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-47",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 46",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P42r",
+        "http://scta.info/iiif/penn/canvas/P42v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-48",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 47",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P42v",
+        "http://scta.info/iiif/penn/canvas/P43r"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1-49",
+      "within": "http://scta.info/iiif/rothwellcommentary/penn/range/r1-1",
+      "@type": "sc:Range",
+      "label": "Distinctio 48",
+      "canvases": [
+        "http://scta.info/iiif/penn/canvas/P43r",
+        "http://scta.info/iiif/penn/canvas/P43v"
+      ],
+      "attribution": "Data provided by the Scholastic Commentaries and Texts Archive",
+      "description": "A range for Sentences Commentary penn",
+      "logo": "http://scta.info/logo.png",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ]
+}
