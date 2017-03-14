@@ -1,8 +1,8 @@
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "http://scta.info/iiif/melanderdeanima/penn855/manifest",
+  "@id": "http://library.upenn.edu/iiif/mscodex855/manifest",
   "@type": "sc:Manifest",
-  "label": "melanderdeanima/penn855",
+  "label": "mscodex855",
   "description": "Manifest Description",
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "service": {

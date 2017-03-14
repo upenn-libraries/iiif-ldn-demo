@@ -1,8 +1,8 @@
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "http://scta.info/iiif/rothwellcommentary/penn/manifest",
+  "@id": "http://library.upenn.edu/iiif/mscodex686/manifest",
   "@type": "sc:Manifest",
-  "label": "rothwellcommentary/penn",
+  "label": "mscodex686",
   "description": "Manifest Description",
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "service": {
