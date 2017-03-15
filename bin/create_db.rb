@@ -8,4 +8,4 @@ manifests = db[:manifests]
 manifests.indexes.create_one({ '@id': 1 }, unique: true )
 
 notifications = db[:notifications]
-notifications.indexes.create_one({ '@id': 1 }, unique: true )
+notifications.indexes.create_one({ '@id': 1 }, unique: true)
