@@ -15,6 +15,14 @@ directories.each do |directory|
   end
 end
 
+# Connect to mongo, set the collections
+configure do
+  db = Mongo::Client.new([ '127.0.0.1:27017' ], :database => 'iiif-notifications')
+  set :mongo_db, db
+  set :manifests, db[:manifests]
+  set :notifications, db[:notifications]
+end
+
 helpers do
   # a helper method to turn a string ID
   # representation into a BSON::ObjectId
@@ -37,60 +45,66 @@ helpers do
   end
 end
 
-configure do
-  db = Mongo::Client.new([ '127.0.0.1:27017' ], :database => 'iiif-notifications')
-  set :mongo_db, db
-end
 
 get '/' do
-  'Hello, world!'
+  content_type :json
+
+  JSON.pretty_generate {}
 end
 
+# return the manifest with `:name`
+#
+# GET '/iiif/:name/manifests'
 get '/iiif/:name/manifest/?' do
   content_type :json
   headers 'Link' => '</notifications>; rel="http://www.w3.org/ns/ldp#inbox"'
 
   at_id = "http://library.upenn.edu/iiif/#{params[:name]}/manifest"
-
-  manifest = settings.mongo_db[:manifests].find({'@id': at_id}).to_a.first
-
+  manifest = settings.manifests.find({'@id': at_id}).to_a.first
   manifest.delete "_id" unless manifest.nil?
   JSON.pretty_generate manifest || {}
 end
 
+# Accept a notification
+# POST '/iiif/notifications'
 post '/iiif/notifications' do
+  return 415 unless request.content_type == 'application/json'
+
   content_type :json
 
   begin
     payload = JSON.parse(request.body.read)
+    result = settings.notifications.insert_one payload
 
-    result = settings.mongo_db[:notifications].insert_one payload
-
-    content_type :json
     JSON.pretty_generate result.inserted_id
   rescue Mongo::Error::OperationFailure => e
     return 500
   end
 end
 
+# GET '/iiif/notifications' # return all notfifications
+# GET '/iiif/notifications?target=<URL>'
 get '/iiif/notifications/?' do
   content_type :json
 
-  this_uri = request.env['REQUEST_URI']
-
+  # Theres a target, find all notifications on it
   if params[:target]
-    data = settings.mongo_db[:notifications].find(target: params[:target]).to_a.first
+    data = settings.notifications.find(target: params[:target]).to_a.first
     data.delete :_id unless data.nil?
-  else
+  else # Return all the notifications
+    this_uri = request.env['REQUEST_URI']
     data = { '@context': 'http://www.w3.org/ns/ldp' }
     data[:'@id'] = this_uri
-    data[:contains] = settings.mongo_db[:notifications].find().map { |doc|
+    data[:contains] = settings.notifications.find().map { |doc|
       "#{this_uri}/#{doc['_id']}"
     }
   end
   JSON.pretty_generate data || {}
 end
 
+# Return a specific notification
+#
+# GET '/iiif/notifications/:id'
 get '/iiif/notifications/:id' do
   content_type :json
 
