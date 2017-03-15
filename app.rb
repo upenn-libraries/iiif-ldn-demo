@@ -15,7 +15,7 @@ directories.each do |directory|
   end
 end
 
-# Connect to mongo, set the collections
+# Connect to mongo; set the collections
 configure do
   db = Mongo::Client.new([ '127.0.0.1:27017' ], :database => 'iiif-notifications')
   set :mongo_db, db
@@ -45,14 +45,13 @@ helpers do
   end
 end
 
-
 get '/' do
   content_type :json
 
-  JSON.pretty_generate {}
+  JSON.dump({})
 end
 
-# return the manifest with `:name`
+# Return the manifest with `:name`
 #
 # GET '/iiif/:name/manifests'
 get '/iiif/:name/manifest/?' do
