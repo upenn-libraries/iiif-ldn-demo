@@ -58,7 +58,6 @@ get '/iiif/:name/manifest/?' do
   headers( "Access-Control-Allow-Origin" => "*")
   content_type :json
   headers 'Link' => '</notifications>; rel="http://www.w3.org/ns/ldp#inbox"'
-
   at_id = "http://library.upenn.edu/iiif/#{params[:name]}/manifest"
   manifest = settings.manifests.find({'@id': at_id}).to_a.first
   manifest.delete "_id" unless manifest.nil?
@@ -91,7 +90,7 @@ get '/iiif/notifications/?' do
 
   protocol  = request.ssl? ? 'https': 'http'
   host_port = request.host_with_port
-  path      = request.path
+  path      = request.path.chomp('/')
 
   this_uri  = "#{protocol}://#{host_port}#{path}"
 
