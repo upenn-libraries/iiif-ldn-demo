@@ -55,6 +55,7 @@ end
 #
 # GET '/iiif/:name/manifests'
 get '/iiif/:name/manifest/?' do
+  headers( "Access-Control-Allow-Origin" => "*")
   content_type :json
   headers 'Link' => '</notifications>; rel="http://www.w3.org/ns/ldp#inbox"'
 
@@ -67,6 +68,7 @@ end
 # Accept a notification
 # POST '/iiif/notifications'
 post '/iiif/notifications' do
+  headers( "Access-Control-Allow-Origin" => "*")
   return 415 unless request.content_type == 'application/json'
 
   content_type :json
@@ -84,6 +86,7 @@ end
 # GET '/iiif/notifications' # return all notfifications
 # GET '/iiif/notifications?target=<URL>'
 get '/iiif/notifications/?' do
+  headers( "Access-Control-Allow-Origin" => "*")
   content_type :json
 
   protocol  = request.ssl? ? 'https': 'http'
@@ -109,6 +112,7 @@ end
 #
 # GET '/iiif/notifications/:id'
 get '/iiif/notifications/:id' do
+  headers( "Access-Control-Allow-Origin" => "*")
   content_type :json
 
   doc = document_by_id :notifications, params[:id]
