@@ -72,14 +72,10 @@ post '/iiif/notifications' do
 
   content_type :json
 
-  begin
-    payload = JSON.parse(request.body.read)
-    result = settings.notifications.insert_one payload
+  payload = JSON.parse(request.body.read)
+  result = settings.notifications.insert_one payload
 
-    JSON.pretty_generate result.inserted_id
-  rescue Mongo::Error::OperationFailure => e
-    return 500
-  end
+  JSON.pretty_generate result.inserted_id
 end
 
 # GET '/iiif/notifications' # return all notfifications
