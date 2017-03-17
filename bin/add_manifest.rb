@@ -3,8 +3,6 @@
 require 'json'
 require 'mongo'
 
-require 'pry'
-
 def usage
   $stderr.puts "Usage: #{File.basename __FILE__} JSON"
 end
