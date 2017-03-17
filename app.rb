@@ -98,9 +98,18 @@ get '/iiif/notifications/?' do
   data[:contains] = settings.notifications.find(args).map { |doc|
     # what_i_want = this_uri.sub /\?.*$/, ''
     # "#{doc['_id']}"
-    "#{this_uri}/#{doc['_id']}"
+    # motivation: transcription, metadata, description, painting
+    { url: "#{this_uri}/#{doc['_id']}", motivation: "#{doc['motivation']}" }
   }
   JSON.pretty_generate data || {}
+end
+
+get '/iiif/test' do
+  headers( "Access-Control-Allow-Origin" => "*")
+  content_type :json
+  data = JSON.load open('./public/test_manifest.json')
+
+  JSON.pretty_generate data
 end
 
 # Return a specific notification
