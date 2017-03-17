@@ -86,18 +86,22 @@ end
 get '/iiif/notifications/?' do
   content_type :json
 
+  protocol  = request.ssl? ? 'https': 'http'
+  host_port = request.host_with_port
+  path      = request.path
+
+  this_uri  = "#{protocol}://#{host_port}#{path}"
+
   # Theres a target, find all notifications on it
-  if params[:target]
-    data = settings.notifications.find(target: params[:target]).to_a.first
-    data.delete :_id unless data.nil?
-  else # Return all the notifications
-    this_uri = request.env['REQUEST_URI']
-    data = { '@context': 'http://www.w3.org/ns/ldp' }
-    data[:'@id'] = this_uri
-    data[:contains] = settings.notifications.find().map { |doc|
-      "#{this_uri}/#{doc['_id']}"
-    }
-  end
+  args = params[:target].nil? ? nil : {target: params[:target]}
+  # this_uri = request.env['REQUEST_URI']
+  data = { '@context': 'http://www.w3.org/ns/ldp' }
+  data[:'@id'] = this_uri
+  data[:contains] = settings.notifications.find(args).map { |doc|
+    # what_i_want = this_uri.sub /\?.*$/, ''
+    # "#{doc['_id']}"
+    "#{this_uri}/#{doc['_id']}"
+  }
   JSON.pretty_generate data || {}
 end
 
