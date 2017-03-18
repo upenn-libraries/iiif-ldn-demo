@@ -36,11 +36,10 @@ helpers do
 
   def add_to_payload(doc, uri, type)
     args = params[:target].nil? ? nil : {target: params[:target]}
-    data = { '@context': 'http://www.w3.org/ns/ldp' }
-    data[:'@id'] = uri
-    data[:contains] = settings.notifications.find(args).map { |doc|
+    data = settings.notifications.find(args).map { |doc|
       pull_payload_attributes(doc['object'], type)
     }
+    return label_for_payload(type), data
   end
 
   def pull_payload_attributes(uri, type)
@@ -55,6 +54,10 @@ helpers do
       else
         return response
     end
+  end
+
+  def label_for_payload(type)
+    return 'structures' if type == 'sc:Range'
   end
 
   def document_by_id collection, id
@@ -126,9 +129,8 @@ get '/iiif/notifications/?' do
     doc['target'] = [doc['target']] unless doc['target'].respond_to? :each
     doc['target'].each do |target|
       target_uri = "#{this_uri}?target=#{target}"
-      payload = add_to_payload(doc, target_uri, 'sc:Range')
-      binding.pry
-      settings.manifests.find_one_and_update({'@id' => doc['@id']}, { '$set' => {"structures": payload } })
+      label, payload = add_to_payload(doc, target_uri, 'sc:Range')
+      settings.manifests.find_one_and_update({'@id' => doc['@id']}, { '$set' => {"#{label}": payload } })
     end
 
     # what_i_want = this_uri.sub /\?.*$/, ''
