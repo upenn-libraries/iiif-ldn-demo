@@ -2,10 +2,10 @@
 require 'sinatra'
 require 'json'
 require 'mongo'
+require 'open-uri'
 
 require 'sinatra/reloader' if development?
 require 'pry' if development?
-
 
 directories = %w(lib)
 
@@ -34,6 +34,29 @@ helpers do
     end
   end
 
+  def add_to_payload(doc, uri, type)
+    args = params[:target].nil? ? nil : {target: params[:target]}
+    data = { '@context': 'http://www.w3.org/ns/ldp' }
+    data[:'@id'] = uri
+    data[:contains] = settings.notifications.find(args).map { |doc|
+      pull_payload_attributes(doc['object'], type)
+    }
+  end
+
+  def pull_payload_attributes(uri, type)
+    response = JSON.parse(open(uri).read)
+    return fetch_payload(response, type)
+  end
+
+  def fetch_payload(response, type)
+    case type
+      when 'sc:Range'
+        return response['ranges']
+      else
+        return response
+    end
+  end
+
   def document_by_id collection, id
     id = object_id(id) if String === id
     if id.nil?
@@ -43,6 +66,8 @@ helpers do
       document || {}
     end
   end
+
+
 end
 
 get '/' do
@@ -95,7 +120,17 @@ get '/iiif/notifications/?' do
   # this_uri = request.env['REQUEST_URI']
   data = { '@context': 'http://www.w3.org/ns/ldp' }
   data[:'@id'] = this_uri
+  payload = ''
   data[:contains] = settings.notifications.find(args).map { |doc|
+
+    doc['target'] = [doc['target']] unless doc['target'].respond_to? :each
+    doc['target'].each do |target|
+      target_uri = "#{this_uri}?target=#{target}"
+      payload = add_to_payload(doc, target_uri, 'sc:Range')
+      binding.pry
+      settings.manifests.find_one_and_update({'@id' => doc['@id']}, { '$set' => {"structures": payload } })
+    end
+
     # what_i_want = this_uri.sub /\?.*$/, ''
     # "#{doc['_id']}"
     # motivation: transcription, metadata, description, painting
