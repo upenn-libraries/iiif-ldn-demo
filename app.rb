@@ -133,11 +133,15 @@ get '/iiif/notifications/?' do
   data[:'@id'] = this_uri
   payload = ''
   data[:contains] = settings.notifications.find(args).map { |doc|
-
+    attribute = 'object'
+    type = 'sc:Range'
     doc['target'] = [doc['target']] unless doc['target'].respond_to? :each
     doc['target'].each do |target|
-      label, payload = add_to_payload(doc, 'object', 'sc:Range')
-      next if payload.nil?
+      label, payload = add_to_payload(doc, attribute, type)
+      if payload.nil?
+        logger.warn("Nothing in #{target} payload returned for #{attribute} #{type}, skipping update")
+        next
+      end
       settings.manifests.find_one_and_update({'@id' => doc['@id']}, { '$set' => {"#{label}": payload } })
     end
 
