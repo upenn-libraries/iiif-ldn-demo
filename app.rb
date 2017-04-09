@@ -49,7 +49,7 @@ helpers do
 
   def log_if_missing(attribute, attribute_label)
     if attribute.to_s.strip.empty?
-      logger.info("Missing #{attribute_label} value in notification")
+      logger.warn("Missing #{attribute_label} value in notification")
       return true
     end
     return false
