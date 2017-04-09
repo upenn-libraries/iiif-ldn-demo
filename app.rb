@@ -21,6 +21,7 @@ configure do
   set :mongo_db, db
   set :manifests, db[:manifests]
   set :notifications, db[:notifications]
+  set :logger, Logger.new(STDOUT)
 end
 
 helpers do
@@ -34,17 +35,24 @@ helpers do
     end
   end
 
-  def add_to_payload(doc, uri, type)
-    args = params[:target].nil? ? nil : {target: params[:target]}
-    data = settings.notifications.find(args).map { |doc|
-      pull_payload_attributes(doc['object'], type)
-    }
+  def add_to_payload(doc, attribute_string, type)
+    return_status = log_if_missing(doc[attribute_string], attribute_string)
+    return if return_status
+    data = pull_payload_attributes(doc[attribute_string], type)
     return label_for_payload(type), data
   end
 
   def pull_payload_attributes(uri, type)
     response = JSON.parse(open(uri).read)
     return fetch_payload(response, type)
+  end
+
+  def log_if_missing(attribute, attribute_label)
+    if attribute.to_s.strip.empty?
+      logger.info("Missing #{attribute_label} value in notification")
+      return true
+    end
+    return false
   end
 
   def fetch_payload(response, type)
@@ -118,7 +126,7 @@ get '/iiif/notifications/?' do
 
   this_uri  = "#{protocol}://#{host_port}#{path}"
 
-  # Theres a target, find all notifications on it
+  # There's a target, find all notifications on it
   args = params[:target].nil? ? nil : {target: params[:target]}
   # this_uri = request.env['REQUEST_URI']
   data = { '@context': 'http://www.w3.org/ns/ldp' }
@@ -128,8 +136,8 @@ get '/iiif/notifications/?' do
 
     doc['target'] = [doc['target']] unless doc['target'].respond_to? :each
     doc['target'].each do |target|
-      target_uri = "#{this_uri}?target=#{target}"
-      label, payload = add_to_payload(doc, target_uri, 'sc:Range')
+      label, payload = add_to_payload(doc, 'object', 'sc:Range')
+      next if payload.nil?
       settings.manifests.find_one_and_update({'@id' => doc['@id']}, { '$set' => {"#{label}": payload } })
     end
 
