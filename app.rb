@@ -43,6 +43,10 @@ helpers do
   end
 
   def pull_payload_attributes(uri, type)
+    if open(uri).read.empty?
+      logger.warn("Object #{uri} does not return JSON payload as expected")
+      return
+    end
     response = JSON.parse(open(uri).read)
     return fetch_payload(response, type)
   end
@@ -148,7 +152,13 @@ get '/iiif/notifications/?' do
     # what_i_want = this_uri.sub /\?.*$/, ''
     # "#{doc['_id']}"
     # motivation: transcription, metadata, description, painting
-    { url: "#{this_uri}/#{doc['_id']}", motivation: "#{doc['motivation']}" }
+
+    motivation = doc['motivation'].nil? ? 'iiifsupplement' : doc['motivation']
+
+    { url: "#{this_uri}/#{doc['_id']}",
+      motivation: "#{motivation}",
+      updated: doc['updated'],
+      source: doc['source'] }
   }
   JSON.pretty_generate data || {}
 end
