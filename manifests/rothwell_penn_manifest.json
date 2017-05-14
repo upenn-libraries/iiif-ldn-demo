@@ -7,7 +7,7 @@
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "service": {
     "@context": "http://www.w3.org/ns/ldp#inbox",
-    "@id": "http://sims-dev.library.upenn.edu:8084/iiif/notifications?target=library.upenn.edu/iiif/mscodex686/manifest",
+    "@id": "http://sims-dev.library.upenn.edu:8084/iiif/notifications?target=http://library.upenn.edu/iiif/mscodex686/manifest",
     "profile": "http://www.w3.org/ns/ldp#inbox",
     "label": "Linked Data Notifications inbox"
   },
