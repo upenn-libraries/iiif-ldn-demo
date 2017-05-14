@@ -6,10 +6,10 @@
   "description": "Manifest Description",
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "service": {
-    "@context": "http://iiif.io/api/search/1/context.json",
-    "@id": "http://exist.scta.info/exist/apps/scta-app/iiif/rothwellcommentary/penn/search",
-    "profile": "http://iiif.io/api/search/1/search",
-    "label": "Search within this manifest"
+    "@context": "http://www.w3.org/ns/ldp#inbox",
+    "@id": "http://sims-dev.library.upenn.edu:8084/iiif/notifications?target=http://library.upenn.edu/iiif/mscodex686/manifest",
+    "profile": "http://www.w3.org/ns/ldp#inbox",
+    "label": "Linked Data Notifications inbox"
   },
   "sequences": [
     {
