@@ -72,6 +72,12 @@ helpers do
     return 'structures' if type == 'sc:Range'
   end
 
+  def value_or_default(value, value_type)
+    return (value.nil? ? 'iiifsupplement' : value) if value_type == 'motivation'
+    return (value.nil? ? '' : value) if value_type == 'updated'
+    return (value.nil? ? '' : value) if value_type == 'source'
+  end
+
   def document_by_id collection, id
     id = object_id(id) if String === id
     if id.nil?
@@ -149,16 +155,10 @@ get '/iiif/notifications/?' do
       settings.manifests.find_one_and_update({'@id' => doc['@id']}, { '$set' => {"#{label}": payload } })
     end
 
-    # what_i_want = this_uri.sub /\?.*$/, ''
-    # "#{doc['_id']}"
-    # motivation: transcription, metadata, description, painting
-
-    motivation = doc['motivation'].nil? ? 'iiifsupplement' : doc['motivation']
-
     { url: "#{this_uri}/#{doc['_id']}",
-      motivation: "#{motivation}",
-      updated: doc['updated'],
-      source: doc['source'] }
+      motivation: "#{value_or_default(doc['motivation'], 'motivation')}",
+      updated: "#{value_or_default(doc['updated'], 'updated')}",
+      source: "#{value_or_default(doc['source'], 'source')}" }
   }
   JSON.pretty_generate data || {}
 end
