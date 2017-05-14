@@ -88,7 +88,13 @@ helpers do
     end
   end
 
+  def remove_by_id collection, id
+    return if id.nil?
+    return if id === String && id.strip.empty?
 
+    id = object_id(id) if String === id
+    settings.mongo_db[collection].delete_one(_id: id)
+  end
 end
 
 get '/' do
@@ -182,4 +188,10 @@ get '/iiif/notifications/:id' do
   doc.delete :_id
 
   JSON.pretty_generate doc
+end
+
+delete '/iiif/notifications/:id' do
+  content_type :json
+  remove_by_id 'notifications', params[:id]
+  JSON.generate({ ok: 1 })
 end
