@@ -74,8 +74,20 @@ helpers do
 
   def notification_value(value, value_type)
     return (value.nil? ? 'iiifsupplement' : value) if value_type == 'motivation'
-    return (value.nil? ? '' : value) if value_type == 'updated'
-    return (value.nil? ? '' : value) if value_type == 'source'
+    return value
+  end
+
+  def missing?(value)
+    return value.nil? || value.empty?
+  end
+
+  #Can be used to validate DateTime values
+  def datetime_validate(value)
+    begin
+      return DateTime.parse(value)
+    rescue ArgumentError, NoMethodError
+      logger.warn("Invalid DateTime format for #{value}")
+    end
   end
 
   def document_by_id collection, id
@@ -161,10 +173,14 @@ get '/iiif/notifications/?' do
       settings.manifests.find_one_and_update({'@id' => doc['@id']}, { '$set' => {"#{label}": payload } })
     end
 
-    { url: "#{this_uri}/#{doc['_id']}",
-      motivation: "#{notification_value(doc['motivation'], 'motivation')}",
-      updated: "#{notification_value(doc['updated'], 'updated')}",
-      source: "#{notification_value(doc['source'], 'source')}" }
+    contains = { url: "#{this_uri}/#{doc['_id']}",
+                 motivation: "#{notification_value(doc['motivation'], 'motivation')}"
+    }
+
+    contains[:updated] = "#{notification_value(doc['updated'], 'updated')}" unless missing?(doc['updated'])
+    contains[:source] = "#{notification_value(doc['source'], 'source')}" unless missing?(doc['source'])
+
+    contains
   }
   JSON.pretty_generate data || {}
 end
