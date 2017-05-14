@@ -133,12 +133,10 @@ end
 post '/iiif/notifications' do
   headers( "Access-Control-Allow-Origin" => "*")
   return 415 unless request.content_type == 'application/json'
-
   content_type :json
-
   payload = JSON.parse(request.body.read)
+  payload['received'] = DateTime.now.strftime('%d-%m-%Y %I:%M:%S %Z')
   result = settings.notifications.insert_one payload
-
   JSON.pretty_generate result.inserted_id
 end
 
@@ -179,6 +177,7 @@ get '/iiif/notifications/?' do
 
     contains[:updated] = "#{notification_value(doc['updated'], 'updated')}" unless missing?(doc['updated'])
     contains[:source] = "#{notification_value(doc['source'], 'source')}" unless missing?(doc['source'])
+    contains[:received] = "#{notification_value(doc['received'], 'received')}" unless missing?(doc['received'])
 
     contains
   }
