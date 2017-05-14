@@ -72,7 +72,7 @@ helpers do
     return 'structures' if type == 'sc:Range'
   end
 
-  def value_or_default(value, value_type)
+  def notification_value(value, value_type)
     return (value.nil? ? 'iiifsupplement' : value) if value_type == 'motivation'
     return (value.nil? ? '' : value) if value_type == 'updated'
     return (value.nil? ? '' : value) if value_type == 'source'
@@ -156,9 +156,9 @@ get '/iiif/notifications/?' do
     end
 
     { url: "#{this_uri}/#{doc['_id']}",
-      motivation: "#{value_or_default(doc['motivation'], 'motivation')}",
-      updated: "#{value_or_default(doc['updated'], 'updated')}",
-      source: "#{value_or_default(doc['source'], 'source')}" }
+      motivation: "#{notification_value(doc['motivation'], 'motivation')}",
+      updated: "#{notification_value(doc['updated'], 'updated')}",
+      source: "#{notification_value(doc['source'], 'source')}" }
   }
   JSON.pretty_generate data || {}
 end
