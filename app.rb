@@ -43,6 +43,10 @@ helpers do
   end
 
   def pull_payload_attributes(uri, type)
+    if open(uri).read.empty?
+      logger.warn("Object #{uri} does not return JSON payload as expected")
+      return
+    end
     response = JSON.parse(open(uri).read)
     return fetch_payload(response, type)
   end
@@ -66,6 +70,12 @@ helpers do
 
   def label_for_payload(type)
     return 'structures' if type == 'sc:Range'
+  end
+
+  def notification_value(value, value_type)
+    return (value.nil? ? 'iiifsupplement' : value) if value_type == 'motivation'
+    return (value.nil? ? '' : value) if value_type == 'updated'
+    return (value.nil? ? '' : value) if value_type == 'source'
   end
 
   def document_by_id collection, id
@@ -145,10 +155,10 @@ get '/iiif/notifications/?' do
       settings.manifests.find_one_and_update({'@id' => doc['@id']}, { '$set' => {"#{label}": payload } })
     end
 
-    # what_i_want = this_uri.sub /\?.*$/, ''
-    # "#{doc['_id']}"
-    # motivation: transcription, metadata, description, painting
-    { url: "#{this_uri}/#{doc['_id']}", motivation: "#{doc['motivation']}" }
+    { url: "#{this_uri}/#{doc['_id']}",
+      motivation: "#{notification_value(doc['motivation'], 'motivation')}",
+      updated: "#{notification_value(doc['updated'], 'updated')}",
+      source: "#{notification_value(doc['source'], 'source')}" }
   }
   JSON.pretty_generate data || {}
 end
