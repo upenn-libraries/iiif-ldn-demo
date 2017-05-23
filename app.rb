@@ -119,8 +119,8 @@ end
 # Static manifests
 #
 get '/iiif/:name.json' do |filename|
-  logger.info "====== #{filename} ===="
-  headers( "Access-Control-Allow-Origin" => "*")
+  content_type :json
+  headers "Access-Control-Allow-Origin" => "*"
   send_file "public/manifests/#{filename}.json"
 end
 
