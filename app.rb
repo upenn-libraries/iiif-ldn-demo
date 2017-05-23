@@ -115,6 +115,15 @@ get '/' do
   JSON.dump({})
 end
 
+##
+# Static manifests
+#
+get '/iiif/:name.json' do |filename|
+  content_type :json
+  headers "Access-Control-Allow-Origin" => "*"
+  send_file "public/manifests/#{filename}.json"
+end
+
 # Return the manifest with `:name`
 #
 # GET '/iiif/:name/manifests'
