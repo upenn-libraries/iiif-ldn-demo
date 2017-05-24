@@ -17,6 +17,7 @@ end
 
 # Connect to mongo; set the collections
 configure do
+  set :static, false
   db = Mongo::Client.new([ '127.0.0.1:27017' ], :database => 'iiif-notifications')
   set :mongo_db, db
   set :manifests, db[:manifests]
